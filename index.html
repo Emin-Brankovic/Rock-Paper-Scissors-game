@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock,Paper,Scissors</title>
+</head>
+<body>
+    <header>
+        <span id="naslov">Rock Paper Scissors</span>
+    </header>
+    <div class="wrapper">
+        <div class="rezultat">
+            <div id="user-lable" class="badge">user</div>
+            <div id="pc-lable" class="badge">pc</div>
+            <span id="user-score">0</span>:<span id="cp-score">0</span>
+        </div>
+        <p id="ispis-pobjede">Make your move to start the game</p>
+        <div class="signs-wrapper">
+            <img onclick="game('kamen')" id="kamen" src="slike/Kamen.png" alt="">
+            <img onclick="game('papir')" id="papir" src="slike/Papir.png" alt="">
+            <img onclick="game('makaze')" id="makaze" src="slike/makaze.png" alt="">
+        </div>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
